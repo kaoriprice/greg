@@ -1,0 +1,72 @@
+@import "compass/reset";
+@import "style";
+@import "header";
+@import "setting";
+
+html{
+	border:$brown_2 1px solid;
+}
+.gallery {
+	width:100%;
+	padding:10px;
+	background-color:$white;
+}
+#container{
+	background-color:$gallery_background_color;
+}
+.gallery__item{
+	float:left;
+	padding:$m;
+	padding-bottom:$m*2;
+	width:calc(100%/4);
+	border:1px solid transparent;
+	&:hover{
+		border:1px solid $brown-3;
+		background-color:$gallery_item_background_color;
+	}
+}
+.gallery__item__image{
+	width:100%;
+}
+.gallery__item__info{
+	font-family: $serif;
+	color:$title_color;
+	text-align:center;letter-spacing:1px;
+	word-break:keep-all;
+}
+.gallery__item__info--title{
+	font-size: $m;text-transform: uppercase;
+	padding-top:$m;
+}
+.gallery__item__info--data{
+	display:inline-block;
+	font-size: $m;text-transform:lowercase;font-variant:small-caps; 
+}
+
+
+
+
+@media (min-width: 1024px){
+	.gallery__item{
+		width:calc(100%/3);
+	}
+} 
+@media (min-width: 1366px){
+	.gallery__item{
+		width:calc(100%/4);
+	}
+} 
+@media (max-width: 1024px){
+	.gallery__item{
+		width:calc(100%/2);
+	}
+} 
+@media (max-width: 480px){
+	.gallery {
+	width:100%;
+	padding:10px;
+}
+	.gallery__item{
+		width:calc(100%/2);
+	}
+}

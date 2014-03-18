@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Greg Wilbur::Portfolio</title>
+		<link href="css\interior.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<header class="header">
+			<h1><a class="header__logo" href="index.html">Greg Wilbur</a></h1>
+			<h2 class="header__tag">Metalsmith / Art Organizer / Curator</h2>
+			
+
+			<nav class="header__nav">
+				<ul>
+					<li><a class="header__nav__item selected" href="index.html">Metalworks</a></li>
+					<li><a class="header__nav__item" href="techniques.html">Techniques</a></li>
+					<li><a  class="header__nav__item"href="#">Biography</a></li>
+					<li><img class="header__nav__item__contact--icon" src="icon/message/message-25.png"><a class="header__nav__item__contact" href="#">contact</a></li>
+				</ul>
+			</nav>
+
+			<nav class="header__nav__second">
+				<ul>
+					<li>
+						<a class="header__nav__second__item selected" href="index.html">All</a>
+					</li>
+					<li>
+						<a class="header__nav__second__item" href="index.html">Vessels/Bowls</a></li>
+					<li>
+						<a class="header__nav__second__item" href="index.html">Wall Pieces</a>
+					</li>
+					<li>
+						<a class="header__nav__second__item " href="index.html">Sculptures</a>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="container">
+			<main class="gallery">
+				<div id="container" class="js-masonry " data-masonry-options='{"itemSelector": ".gallery__item"}'>
+
+					<figure class="gallery__item">
+						<a href="interior.html">
+							<img class="gallery__item__image" src="img/1000x1000/Greg3979.png" alt="" />
+							<figcaption class="gallery__item__info" >
+								<h1 class="gallery__item__info--title">Metalworks Name</h1>
+								<small class="gallery__item__info--data">2013, Bronze and copper, 5 x 40 </small>
+							</figcaption>
+						</a>
+					</figure>
+					
+				</div>
+			</main>
+		</div>
+
+		<a href="#">
+			<div class="gallery__nav--next">></div>
+		</a>
+		<a href="#">
+			<div class="gallery__nav--previous"><</div>
+		</a>
+		<script src="lib/masonry.pkgd.min.js"></script>
+	</body>
+</html>

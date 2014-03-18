@@ -1,0 +1,94 @@
+@import "style";
+@import "setting";
+@import "compass/utilities/general/clearfix";
+
+.header{
+	font-family:$serif;
+	//background-color:#d6dfd7;
+}
+.header__logo{
+	position:relative;
+	display:inline-block;
+	color:$logo_color;
+	padding:$m; padding-bottom:0; padding-left:$m+10px;
+	font-size: $xxl; font-weight:bold; letter-spacing:2px; text-transform: uppercase;
+		&:hover{
+		color: $logo_color-hover;
+		}
+}
+.header__tag{
+	font-size:$m; color:$tag_color; letter-spacing:1.5px;
+	padding:$m; padding-top:2px;padding-left:$m+10px;
+}
+.header__nav{
+	font-family:$sans_serif;
+	padding-left:$m+10px;
+	border-top:1px solid $brown-2;
+	border-bottom:1px solid $brown-2;
+	.selected{
+		color:$nav_color-selected;
+		background-color:$nav_color_background-selected;
+		//border-left:1px solid $brown-1; border-right:1px solid $brown-1;
+		&:hover{
+			color:$nav_color-selected;
+		}
+	}
+	li{
+	display:inline;
+	}
+}
+.header__nav__item{
+	display:inline-block;
+	padding:$m;
+	font-size:$m; color:$nav_color; font-weight:bold; text-transform:uppercase; 
+	&:hover{
+		color:$nav_color-hover;
+		//background-color:$nav_color_background-hover;
+	}
+}
+.header__nav__item__contact{
+	position:absolute; top:$m; right:$m+10px;
+	line-height:$xxl; font-weight:bold;text-transform:uppercase; 
+	padding:0 $s;
+	font-size:$m;
+	color: $contact_color; border:1px solid $contact_color-border;
+	display:none;
+
+	&:hover{
+		color: $contact_color-hover;border:1px solid $contact_color-border-hover;
+		background-color:$white;
+	}
+}
+.header__nav__item__contact--icon{
+	//display:none;
+	position:absolute; top:$m; right:$m+10px;
+}
+.header__nav__second {
+	font-family:$sans_serif; font-weight:bold;
+	border-bottom:1px solid $brown-2;
+	padding-left:$m+10px;
+	.selected{
+		color:$nav_second_color-selected;
+		background-color:$nav_second_color_background-selected;
+		//border-left:1px solid $brown-1; border-right:1px solid $brown-1;
+	}
+	li{
+	display:inline;
+	}
+}
+.header__nav__second__item{
+	display:inline-block;
+	padding:$s $m;
+	font-size:$m;
+	color: $nav_second_color;letter-spacing:0.8px;
+	text-transform:lowercase;
+	&:hover{
+		color:$nav_second_color-hover;
+		//background-color:$nav_second_color_background-hover;
+		}
+}
+@media (max-width: 480px){
+	.header__logo,.header__tag,.header__nav,.header__nav__second{
+	padding-left:10px;
+	}
+}

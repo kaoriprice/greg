@@ -1,0 +1,124 @@
+
+@import "compass/reset";
+@import "style";
+@import "shapes";
+
+img{
+	width:100%;
+}
+div.image_column{
+	display: block;
+	position: relative;
+	background-color:transparent;
+}
+div.image_column{
+	padding:0 30px;
+}
+div#full_screen a{
+	float:right;
+	display:inline;
+	height:30px;
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:0px;
+	padding:7px 20px 7px 20px;
+	font-size:$medium;
+	font-style:italic;
+	background-color:$pink;
+	background-color:$light_pink;
+	color:$pink;
+	@include transition_text-color_ease-in;
+	@include transition_background-color_ease-in;
+	&:hover{
+	color:$light_pink;
+	background-color:$pink;
+	@include transition_text-color_ease-out;
+	@include transition_background-color_ease-out;
+	}
+}
+div.interior_nav{
+	li#previous{
+		float:left;
+		padding: 15px 0;
+		padding-left:30px;
+		a{
+			div.circle{
+				@include circle(30px);
+				background-color:$light_green;
+				@include transition_background-color_ease-in;
+				padding-top:8px;
+				padding-left:8px;
+			}
+			div.triangle_left{
+				@include tri_left(9px, 7px);
+				@include tri_foreground($green);
+				@include tri_background(transparent);		
+			}
+			&:hover{
+				div.circle{
+					background-color:$green;
+					@include transition_background-color_ease-out;
+				}
+				div.triangle_left{
+					@include tri_foreground($light_green);
+					@include transition_border-color_ease-out;
+				}
+			}
+		}
+	}
+	li#next{
+		float:right;
+		padding: 15px 0;
+		padding-right:30px;
+		a{
+			div.circle{
+				@include circle(30px);
+				background-color:$light_green;
+				@include transition_background-color_ease-in;
+				padding-top:8px;
+				padding-left:12px;
+			}
+			div.triangle_right{
+				@include tri_right(9px, 7px);
+				@include tri_foreground($green);
+				@include tri_background(transparent);				
+			}
+			&:hover{
+				div.circle{
+					background-color:$green;
+					@include transition_background-color_ease-out;
+				}
+				div.triangle_right{
+					@include tri_foreground($light_green);
+					@include transition_border-color_ease-out;
+				}
+			}
+		}
+	}
+}
+div.info_column{
+	width:100%;
+	padding:30px 90px;
+	//padding-bottom:30px;
+	div.metalwork_data{
+		h1, li{
+		line-height:30px;
+		width:100%;
+		padding-left:10px;
+		border-bottom: 1px solid $gray1;
+		}
+		h1{
+		font-family:$serif;
+		font-size: $xlarge;
+		font-weight:bold;
+		letter-spacing:1px;
+		text-transform: uppercase;
+		color:$gray1;
+		}
+		li{
+		font-size:$medium;
+		letter-spacing:1px;
+		color:$gray1;
+		}
+	}
+}

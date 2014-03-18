@@ -1,0 +1,90 @@
+$white: #fff;
+$black: #333;
+
+$brown-1:#6a3212;
+$brown-2:#8f654d;
+$brown-3:#b59888;
+$brown-4:#daccc4;
+
+$logo_color:$brown-1;
+$logo_color-hover:$brown-2;
+$tag_color:$brown-2;
+
+$contact_color:#9c9c9c;
+$contact_color-hover:#9c6f50;
+$contact_color-border:#9c9c9c;
+$contact_color-border-hover:#9c6f50;
+
+$nav_color:$brown-2;
+$nav_color-hover:$brown-1;
+$nav_color-selected:$brown-3;
+$nav_color_background:#125f6a;
+$nav_color_background-selected:$brown-1;
+$nav_color_background-hover:$brown-4;
+
+$nav_second_color:$brown-2;
+$nav_second_color-hover:$brown-1;
+$nav_second_color-selected:$brown-1;
+$nav_second_color_background:red;
+$nav_second_color_background-selected:$brown-3;
+$nav_second_color_background-hover:$brown-4;
+
+$title_color:$brown-1;
+
+$gallery_border_color:$brown-1;
+$gallery_background_color:#f0f0f0;
+
+$gallery_item_border_color:$brown-1;
+$gallery_item_background_color:$white;
+
+
+$gallery_nav_color:$white;
+$gallery_nav_color-hover:$brown-2;
+
+$text_color-dark:#333;
+$text_color-light:$brown-2;
+/*font*/
+$serif:Georgia, Cambria, Garamond; 
+$sans_serif:Arial, Helvetica; 
+
+/*font size*/
+$xxl:42px; 
+$xl: 24px;
+$l:18px;
+$m:13px;
+$s:10px;
+$xs:10px;
+
+ 
+
+//easing
+$ease_out: 0.4s;
+$ease_in: 0.6s;
+
+@mixin header_box{
+	border-bottom: 1px solid $gray1;
+}
+@mixin transition_text-color_ease-out{
+	transition:color .4s;
+	transition-timing-function: ease-out;
+}
+@mixin transition_background-color_ease-out{
+	transition:background-color .4s;
+	transition-timing-function: ease-out;
+}
+@mixin transition_border-color_ease-out{
+	transition:border-color .4s;
+	transition-timing-function: ease-out;
+}
+@mixin transition_text-color_ease-in{
+	transition:color .6s;
+	transition-timing-function: ease-in;
+}
+@mixin transition_background-color_ease-in{
+	transition:background-color .6s;
+	transition-timing-function: ease-in;
+}
+@mixin transition_border-color_ease-in{
+	transition:border-color .6s;
+	transition-timing-function: ease-in;
+}

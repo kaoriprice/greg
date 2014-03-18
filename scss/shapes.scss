@@ -1,0 +1,33 @@
+
+@mixin tri ($width, $height) {
+	width:0px;
+	height:0px;
+	border-top: $height solid;
+	border-bottom: $height solid;
+}
+
+@mixin tri_left ($width, $height) {
+	@include tri($width, $height);
+	border-right: $width solid;
+}
+
+@mixin tri_right ($width, $height) {
+	@include tri($width, $height);
+	border-left: $width solid;
+}
+
+@mixin tri_background ($color) {
+	border-top-color: $color;	
+	border-bottom-color: $color;
+}
+
+@mixin tri_foreground ($color) {
+	border-left-color: $color;
+	border-right-color: $color;
+}
+
+@mixin circle ($radius) {
+	width:$radius;
+	height:$radius;
+	border-radius:$radius;
+}
